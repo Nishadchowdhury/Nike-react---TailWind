@@ -1,57 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nike React-TailWind</title>
-    <script src="./style/tail-css-js.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+  <body>
+    <header class="bg-orange-50 mb-8">
+      <nav class="container mx-auto flex items-center justify-between flex-wrap bg-tealp-6">
+        <div class="flex items-center mr-6">
+          <img src="./icons/Logo.png" class="w-72" alt="" />
+        </div>
 
+        <div class="w-full block lg:flex lg:items-center lg:w-auto">
+          <div class="text-sm text-gray-600">
+            <a
+              href="#responsive-header"
+              class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-black mr-14"
+            >
+              Home
+            </a>
+            <a
+              href="#responsive-header"
+              class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-black mr-14"
+            >
+              Products
+            </a>
+            <a
+              href="#responsive-header"
+              class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-black mr-14"
+            >
+              About Us
+            </a>
+            <a
+              href="#responsive-header"
+              class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-black mr-14"
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!-- nav end ------------------->
 
-    <header>
-        <nav class=" container mx-auto flex items-center justify-between flex-wrap bg-teal bg-red-400 p-6">
-            <div class="flex items-center flex-no-shrink text-white mr-6">
-              <svg class="h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
-              <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span>
-            </div>
-            <div class="block lg:hidden">
-              <button class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white">
-                <svg class="h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-              </button>
-            </div>
-            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-              <div class="text-sm lg:flex-grow">
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
-                  Docs
-                </a>
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
-                  Examples
-                </a>
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white">
-                  Blog
-                </a>
-              </div>
-              <div>
-                <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 lg:mt-0">Download</a>
-              </div>
-            </div>
-          </nav>
+      <section class="container mb-5 mx-auto lg:flex lg:flex-row md:flex md:flex-row md:gap-6 flex flex-col-reverse">
+        <div class="lg:w-1/2 md:w-1/2 w-full mb-2 p-2 lg:flex justify-center">
+          <img src="./images/Group 33092.png" class="lg:w-3/4" alt="" />
+        </div>
+
+        <!--  img end  -->
+
+        <!-- info  -->
+
+        <div class="lg:w-1/2 md:w-1/2 w-full lg:flex flex justify-center items-center p-2">
+          <div class="space-y-4 w-96">
+            <h1
+              style="font-family: 'Bebas Neue', cursive"
+              class="lg:font-bold lg:text-7xl leading-none uppercase text-orange-500 w-64 text-5xl"
+            >
+              Nike React <br />
+              <span class="text-sky-900">Infinity Run 2</span>
+            </h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+            <button class="px-8 py-4 flex bg-gradient-to-t from-blue-700 to-blue-600 text-white rounded-lg mt-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 mr-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </section>
     </header>
-<!-- header end  -->
 
+
+
+
+    <!-- header end  -->
 
     <main>
+<!-- Shoe sec start ----------------------- -->
+      <section class="container mx-auto mb-8">
+        <h1 class=" text-5xl font-normal" style="font-family: 'Bebas Neue', cursive">CASUAL SHOES</h1>
+
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7 ">
+            
+        <div class="p-7 shadow-lg">
+            <div class=" bg-gray-100 rounded-3xl">
+            <img src="./images/image 5.png" alt="">
+            </div>
+            <!-- info  -->
+            <div>
+            <h1 class="text-sky-900 font-bold text-2xl " style="font-family: 'Roboto', sans-serif;">Nike Shoe</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <!-- price -->
+            <div class="flex justify-between items-center ">
+                <h1 class="inline text-orange-500 font-black text-4xl" style="font-family: 'Roboto', sans-serif;">$234</h1> 
+                <button class="px-8 py-4 flex bg-gradient-to-t from-blue-700 to-blue-600 text-white rounded-lg mt-6 ">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 mr-2"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                      />
+                    </svg>
+                    Buy Now
+                  </button>
+            </div>
+        </div>
+          <!-- card-1  -->
+            <div class="p-7 shadow-lg">
+            <div class=" bg-gray-100 rounded-3xl">
+            <img src="./images/shoe-2.png" alt="">
+            </div>
+            <!-- info  -->
+            <div>
+            <h1 class="text-sky-900 font-bold text-2xl " style="font-family: 'Roboto', sans-serif;">Nike Shoe</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <!-- price -->
+            <div class="flex justify-between items-center ">
+                <h1 class="inline text-orange-500 font-black text-4xl" style="font-family: 'Roboto', sans-serif;">$234</h1> 
+                <button class="px-8 py-4 flex bg-gradient-to-t from-blue-700 to-blue-600 text-white rounded-lg mt-6 ">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 mr-2"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                      />
+                    </svg>
+                    Buy Now
+                  </button>
+            </div>
+        </div>
+          <!-- card-2  -->
+            <div class="p-7 shadow-lg">
+            <div class=" bg-gray-100 rounded-3xl">
+            <img src="./images/shoe-3.png" alt="">
+            </div>
+            <!-- info  -->
+            <div>
+            <h1 class="text-sky-900 font-bold text-2xl " style="font-family: 'Roboto', sans-serif;">Nike Shoe</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <!-- price -->
+            <div class="flex justify-between items-center ">
+                <h1 class="inline text-orange-500 font-black text-4xl" style="font-family: 'Roboto', sans-serif;">$234</h1> 
+                <button class="px-8 py-4 flex bg-gradient-to-t from-blue-700 to-blue-600 text-white rounded-lg mt-6 ">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 mr-2"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                      />
+                    </svg>
+                    Buy Now
+                  </button>
+            </div>
+        </div>
+          <!-- card-3  -->
+    </div>
+
+      
+
+      </section>
+
+<!-- Shoe sec end ----------------------- -->
+
+
+
+      <section class="container mx-auto mb-8">
+        <h1 class=" text-5xl font-normal" style="font-family: 'Bebas Neue', cursive">CASUAL SHOES</h1>
+
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-7">
+            
+        <div class="p-7 shadow-lg">
+            <div class=" bg-gray-100 rounded-3xl">
+            <img src="./images/black shoe-1.png" alt="">
+            </div>
+            <!-- info  -->
+            <div>
+            <h1 class="text-sky-900 font-bold text-2xl " style="font-family: 'Roboto', sans-serif;">Prestige High-Cut Leather </h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <!-- price -->
+            <div class="flex justify-between items-center ">
+                <h1 class="inline text-orange-500 font-black text-4xl" style="font-family: 'Roboto', sans-serif;">$234</h1> 
+                <button class="px-8 py-4 flex bg-gradient-to-t from-blue-700 to-blue-600 text-white rounded-lg mt-6 ">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 mr-2"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                      />
+                    </svg>
+                    Buy Now
+                  </button>
+            </div>
+        </div>
+          <!-- card-1  -->
+            <div class="p-7 shadow-lg">
+            <div class=" bg-gray-100 rounded-3xl">
+            <img src="./images/black shoe-2.png" alt="">
+            </div>
+            <!-- info  -->
+            <div>
+            <h1 class="text-sky-900 font-bold text-2xl " style="font-family: 'Roboto', sans-serif;">Slip-On Formal Shoe</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <!-- price -->
+            <div class="flex justify-between items-center ">
+                <h1 class="inline text-orange-500 font-black text-4xl" style="font-family: 'Roboto', sans-serif;">$234</h1> 
+                <button class="px-8 py-4 flex bg-gradient-to-t from-blue-700 to-blue-600 text-white rounded-lg mt-6 ">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 mr-2"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                      />
+                    </svg>
+                    Buy Now
+                  </button>
+            </div>
+        </div>
+          <!-- card-2  -->
+            <div class="p-7 shadow-lg">
+            <div class=" bg-gray-100 rounded-3xl">
+            <img src="./images/black shoe-3.png" alt="">
+            </div>
+            <!-- info  -->
+            <div>
+            <h1 class="text-sky-900 font-bold text-2xl " style="font-family: 'Roboto', sans-serif;">Slip-On Formal Shoe</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <!-- price -->
+            <div class="flex justify-between items-center ">
+                <h1 class="inline text-orange-500 font-black text-4xl" style="font-family: 'Roboto', sans-serif;">$234</h1> 
+                <button class="px-8 py-4 flex bg-gradient-to-t from-blue-700 to-blue-600 text-white rounded-lg mt-6 ">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 mr-2"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                      />
+                    </svg>
+                    Buy Now
+                  </button>
+            </div>
+        </div>
+          <!-- card-3  -->
+    </div>
+
+      </section>
+
+      <section class="container mx-auto mt-14">
+        <div class="flex lg:flex-row flex-col-reverse">
+            <div class="lg:w-8/12 ">
+
+                <div class="rounded-3xl shadow-md  flex justify-between items-center mx-auto px-6 py-5 lg:w-10/12 my-4">
+                    <div class="p-7"> <img width="78"  class="h-20"  class="h-20" src="./icons/image 12.png" alt=""></div>
+               <div class="inline text-sky-900">
+                   <h1 >Find the Perfect Fit</h1>
+                   <p class="inline">Everybody is different, which is why we
+                   offer styles for every body.</p>
+                </div>
+               </div>
+                <div class="rounded-3xl shadow-md  flex justify-between items-center mx-auto px-6 py-5 lg:w-10/12 my-4">
+                    <div class="p-7"> <img width="78"  class="h-20"  class="h-20" src="./icons/image 12.png" alt=""></div>
+               <div class="inline text-sky-900">
+                   <h1 >Find the Perfect Fit</h1>
+                   <p class="inline">Everybody is different, which is why we
+                   offer styles for every body.</p>
+                </div>
+               </div>
+               <div class="rounded-3xl shadow-md  flex justify-between items-center mx-auto px-6 py-5 lg:w-10/12 my-4">
+                <div class="p-7"> <img width="78"  class="h-20"  class="h-20" src="./icons/image 12.png" alt=""></div>
+           <div class="inline text-sky-900  ">
+               <h1 >Find the Perfect Fit</h1>
+               <p class="inline">Everybody is different, which is why we
+               offer styles for every body.</p>
+            </div>
+           </div>
+            </div>
+       
+       <div  class="lg:w-1/2 flex justify-center items-center "><img src="./icons/XMLID 1.png" alt=""></div>
+
+         </div>
+         
+   
+      </section>
+  
 
     </main>
-<!-- main end  -->
+    <!-- main end  -->
 
+    <footer class="mb-24"></footer>
 
-    <footer>
-
-    </footer>
     
-    <br><br><br><br><br><br>
-</body>
+  </body>
 </html>
